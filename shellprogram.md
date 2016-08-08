@@ -35,7 +35,7 @@ sh bar
 ./bar
 ```
 
-Bạn đã sẵn sàng viết script đầu tiên chưa?
+Viết script đầu tiên:
 ```
 $ vim first
 #
@@ -57,6 +57,7 @@ Có 2 kiểu biến:
 Để xem các biến hệ thống sử dụng lệnh: ```$ set```
 
 Một số biến hệ thống quan trọng được thể hiện trong hình dưới:
+
 <img src="http://i.imgur.com/CpkE1sV.png">
 
 nếu bạn muốn in vị trí thư mục *home* của bạn:
@@ -102,6 +103,7 @@ Ví dụ
 $ vech=
 $ vech=""
 ```
+
 <img src="http://i.imgur.com/CpkE1sV.png">
 (5) Không sử dụng **?**, * v.v, để đặt tên cho tên biến của bạn
 
@@ -124,6 +126,7 @@ Nó sẽ in 'Bus'
 > Echo $n
 
 giống hình sau:
+
 <img src="http://i.imgur.com/Piptivk.png">
 
 ##answer:
