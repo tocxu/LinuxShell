@@ -219,3 +219,63 @@ echo "My number is   $myno,   can you see this number"
 ```
 
 #echo Command
+Sử dụng lệnh echo để hiển thị văn bản hoặc giá trị của biến.
+
+echo [tùy chọn] [chuỗi, biến ...]
+Hiển thị văn bản hoặc các biến giá trị trên màn hình.
+
+Tùy chọn
+
+-n Không hiện các dòng mới.
+
+-e Kích hoạt tính năng giải thích các dấu chéo ngược sau ký tự trong chuỗi:
+
+\a cảnh báo (chuông)
+
+\b backspace
+
+\c suppress trailing dòng mới
+
+\n dòng mới
+
+\r trở về vận chuyển
+
+\t tab ngang
+
+\\ dấu chéo ngược
+
+VD:
+> echo -e "An apple a day keeps away \a\t\tdoctor\n"
+
+**Màu mè trong LINUX CONSOLE (screen)**
+
+Syntax:
+> echo   -e  "\033[escape-code    your-message"
+
+For e.g. following echo command prints message in Blue color on console
+> echo -e "\033[34m   Hello Colorful  World!"
+
+<img src="http://i.imgur.com/FY0gW7y.png">
+
+Following table show important list of such escape-code/action letter or character
+
+<img src="http://i.imgur.com/lCCUzLx.png">
+
+**Shell Built in Variables**
+
+<img src="http://i.imgur.com/F2qCT8y.png">
+
+# Shell Arithmetic
+Syntax:
+```
+expr op1 math-operator op2
+```
+VD:
+```
+$ expr 1 + 3
+$ expr 2 - 1
+$ expr 10 / 2
+$ expr 20 % 3
+$ expr 10 \* 3
+$ echo `expr 6 + 3`
+```
