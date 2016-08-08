@@ -279,3 +279,37 @@ $ expr 20 % 3
 $ expr 10 \* 3
 $ echo `expr 6 + 3`
 ```
+**More abou Quotes**
+
+Ba loại quotes:
+
+<img src="http://i.imgur.com/JANWWxb.png">
+
+<img src="http://i.imgur.com/rkptCpy.png">
+
+# Exit Status
+
+# The read Statement
+Syntax:
+```
+read variable1, variable2,...variableN
+```
+Lấy dữ liệu đầu vào (dữ liệu từ người dùng) từ bàn phím và lưu trữ (dữ liệu)trong biến.
+
+```
+$ vim sayH
+#
+#Script to read your name from key-board
+#
+echo "Your first name please:"
+read fname
+echo "Hello $fname, Lets be friend!"
+```
+
+Run it as follows:
+```
+$ chmod 755 sayH
+$ ./sayH
+```
+
+<img src="http://i.imgur.com/zLULHmO.png">
