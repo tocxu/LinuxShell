@@ -313,3 +313,9 @@ $ ./sayH
 ```
 
 <img src="http://i.imgur.com/zLULHmO.png">
+#Wild cards (Filename Shorthand or meta Characters)
+[..-..] Một cặp ký tự cách nhau bởi một dấu trừ biểu thị một phạm vi.
+
+VD:
+
+<img src="http://i.imgur.com/jBNJoRU.png">
