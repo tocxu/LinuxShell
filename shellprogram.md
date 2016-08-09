@@ -319,3 +319,110 @@ $ ./sayH
 VD:
 
 <img src="http://i.imgur.com/jBNJoRU.png">
+
+#Nhiều câu lệnh trên một dòng lệnh
+Syntax:
+
+> command1;command2
+
+Vd:
+> date;who
+
+Sẽ in ngày hôm nay theo sau bởi những người dùng đang đăng nhập.
+
+Lưu ý không thể sử dụng:
+
+> date who
+
+<img src="http://i.imgur.com/iAxnwPh.png">
+
+#Redirection of Standard output/input i.e. Input - Output redirection
+Lệnh
+```
+$ ls
+```
+sẽ hiện kết quả lên màn hình
+
+Nhưng ta có thể đưa kết quả vào file với dòng lệnh sau:
+```
+$ ls >filename
+```
+Có 2 kỹ tự chuyển hướng chính: **>**, **>>**, **<**
+
+(1)Ký tự chuyển hướng:  >
+
+Kết quả output của dòng lệnh sẽ được đưa vào file. Nếu file đã tồn tại sẽ bị ghi đè hoặc tạo file mới
+
+Syntax:
+
+> Linux-command > filename
+
+vs
+```
+$ ls > myfiles
+```
+Bây giờ nếu "myfiles" đã tồn tại thì sẽ bị ghi đè như tạo một file mới
+
+(2) Ký tự chuyển hướng: >>
+
+Như ký tự chuyển hướng trên nhưng dữ liệu trong file đã tồn tại không bị mất đi mà được viết thêm vào
+
+Syntax:
+> Linux-command >> filename
+
+VD:
+```
+$ date >> myfiles
+```
+(3) Ký  tự chuyển hướng: <
+
+Syntax:
+> Linux-command < filename
+
+Để lấy dữ liệu đầu vào từ file thay vì từ bàn phím
+
+```
+$ cat < myfiles
+```
+
+```
+$ cat sorted_names
+ashish
+babu
+vivek
+zebra
+#Ctrl + D to save and exit
+$ sort < sname > sorted_names
+```
+**sort**: các tên được sắp xêp, đầu vào từ file sname và đầu ra là sorted_names.
+
+<img src="http://i.imgur.com/jwZSyif.png">
+```
+$ tr "[a-z]" "[A-Z]" < sname > cap_names
+$ cat cap_names
+VIVEK
+ASHISH
+ZEBRA
+BABU
+```
+
+**tr** : chuyển chữ thường thành chữ in hoa
+
+<img src="http://i.imgur.com/QHd5eoq.png">
+```
+$ sort > new_sorted_names < sname
+$ cat new_sorted_names
+```
+<img src="http://i.imgur.com/F3hqy3a.png">
+
+#PIPES
+<img src="http://i.imgur.com/s5wRPMw.png">
+
+Pipe như bộ nhớ tạm, lưu đầu ra của lệnh trước đó làm đầu vào của lệnh tiếp theo.
+
+Syntax:
+> command1 | command2
+
+VD:
+
+<img src="http://i.imgur.com/XEOLQCI.png">
