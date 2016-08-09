@@ -426,3 +426,24 @@ Syntax:
 VD:
 
 <img src="http://i.imgur.com/XEOLQCI.png">
+
+#Filter
+VD ta có một file number.txt gồm 100 dòng hiện số từ 1 đến 100 [tạo file tự động bằng python]():
+> tail +20 < number.txt | head -n30 >hlist
+
+#Linux Command Related with Process
+
+most commonly used command(s) with process:
+
+<img src="http://i.imgur.com/9kIK5L7.png">
+
+Để tìm tiến trình đang chạy trong phiên làm việc:
+
+```
+$ ps ax | grep mp3-process-name
+```
+Để loại bỏ tiền trình
+```
+$ kill  PID
+$ killall  mp3-process-name
+```
